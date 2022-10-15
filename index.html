@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/chair1-2.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/src/css/main.css" />
+    <script type="module" src="/src/js/controller.js"></script>
+    <title>Interio</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <div class="veil"></div>
+
+    <header class="main-header">
+      <nav class="main-nav">
+        <div class="catalog-hamburger">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </div>
+        <h1 class="logo">Interio</h1>
+        <form class="search-form">
+          <div class="catalog-hamburger-desktop">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+          </div>
+          <div class="search-input-button-wrapper">
+            <div class="search-input-button">
+              <input type="text" class="search-input" placeholder="Search..." />
+              <button class="search-input-btn">Search</button>
+            </div>
+
+            <!-- Search popup -->
+
+            <div class="search-popup-wrapper">
+              <div class="search-popup-form">
+                <input type="text" class="search-popup-input" />
+                <button class="search-popup-btn">Search</button>
+                <div class="search-input-back"></div>
+                <div class="search-input-erase">&times;</div>
+              </div>
+              <!-- <div class="search-popup-categories">
+                <h2>Categories</h2>
+                <ul>
+                  <li><a href="#">Mirrors</a></li>
+                </ul>
+              </div>
+              <hr /> -->
+              <div class="search-popup-products">
+                <!-- <h2>Found products</h2> -->
+                <!-- product result-->
+                <!-- <div class="search-popup-product-wrapper">
+                  <div class="search-popup-product-pic card-pic1"></div>
+                  <div class="search-popup-product-details">
+                    <h3>Ingmar Copen</h3>
+                    <p>Kitchen chair wooden breethe Light Brown</p>
+                    <p>111,60$</p>
+                  </div>
+                </div> -->
+                <!-- product result-->
+                <!-- <div class="search-popup-product-wrapper">
+                  <div class="search-popup-product-pic card-pic2"></div>
+                  <div class="search-popup-product-details">
+                    <h3>Pontse Timber</h3>
+                    <p>Kitchen chair soft comfort Light Brown very soft seat</p>
+                    <p>103$</p>
+                  </div>
+                </div> -->
+                <!-- product result-->
+                <!-- <div class="search-popup-product-wrapper">
+                  <div class="search-popup-product-pic card-pic3"></div>
+                  <div class="search-popup-product-details">
+                    <h3>Jose Monque</h3>
+                    <p>Wooden Brown chair hard comfort Eco</p>
+                    <p>136$</p>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Search popup end -->
+          </div>
+        </form>
+        <div class="favcart-wrapper">
+          <div class="favourites">
+            <div class="favourites-num">0</div>
+          </div>
+          <div class="cart">
+            <div class="cart-num">0</div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Header end-->
+
+    <!-- Catalogue popup -->
+
+    <div class="gray-veil-fav"></div>
+    <div class="gray-veil-cart"></div>
+      <div class="catalogue-popup-wrapper">
+        <div class="catalogue-popup-close">&times;</div>
+        <div class="catalogue-popup-heading">
+          <h2>Catalogue</h2>
+          <hr />
+        </div>
+        <div class="catalogue-tabs-wrapper">
+          <div class="catalogue-tab">
+            <div class="catalogue-tab-heading">
+              <h3>Chairs</h3>
+              <div class="catalogue-unfold-icon"></div>
+            </div>
+
+            <ul class="active">
+              <li><a href="#">Kitchen chairs</a></li>
+              <li><a href="#">Armchairs</a></li>
+              <li><a href="#">Outdoor chairs</a></li>
+            </ul>
+          </div>
+          <div class="catalogue-tab">
+            <div class="catalogue-tab-heading">
+              <h3>Tables</h3>
+              <div class="catalogue-unfold-icon"></div>
+            </div>
+            <ul>
+              <li><a href="#">Big dinner tables</a></li>
+              <li><a href="#">Round tables</a></li>
+              <li><a href="#">Small square tables</a></li>
+            </ul>
+          </div>
+          <div class="catalogue-tab">
+            <div class="catalogue-tab-heading">
+              <h3>Bookcases</h3>
+              <div class="catalogue-unfold-icon"></div>
+            </div>
+            <ul>
+              <li><a href="#">Shelving units</a></li>
+              <li><a href="#">Cabinets</a></li>
+              <li><a href="#">Bookcases</a></li>
+            </ul>
+          </div>
+          <div class="catalogue-tab">
+            <div class="catalogue-tab-heading">
+              <h3>Sofas</h3>
+              <div class="catalogue-unfold-icon"></div>
+            </div>
+            <ul>
+              <li><a href="#">Leather sofas</a></li>
+              <li><a href="#">Poly fabric sofas</a></li>
+            </ul>
+          </div>
+          <div class="catalogue-tab">
+            <div class="catalogue-tab-heading">
+              <h3>Beds</h3>
+              <div class="catalogue-unfold-icon"></div>
+            </div>
+            <ul>
+              <li><a href="#">Single beds</a></li>
+              <li><a href="#">Double beds</a></li>
+            </ul>
+          </div>
+          <div class="catalogue-tab">
+            <div class="catalogue-tab-heading">
+              <h3>Light</h3>
+              <div class="catalogue-unfold-icon"></div>
+            </div>
+            <ul>
+              <li><a href="#">Floor lamps</a></li>
+              <li><a href="#">Table lamps</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+
+    <!-- Shopping cart popup window -->
+
+    <div class="shopping-cart-popup-wrapper">
+      <div class="shopping-cart-popup-close">&times;</div>
+      <!-- Shopping cart -->
+      <h2 class="shopping-cart-heading">
+        Shopping cart (<span class="shopping-cart-heading-number">0</span>)
+      </h2>
+      <div class="cart-message"></div>
+      <div class="shopping-cart-section-wrapper">
+        <div class="shopping-cart-wrapper">
+          <!-- card -->
+          <!-- <div class="shopping-cart-card">
+            <div class="search-result-card-pic card-pic2">
+              <div class="search-result-card-pic-dots">
+                <div class="card-pic-dot"></div>
+                <div class="card-pic-dot"></div>
+                <div class="card-pic-dot"></div>
+                <div class="card-pic-dot"></div>
+              </div>
+              <div class="card-heart"></div>
+            </div>
+            <div class="shopping-cart-card-middle-block">
+              <h3>Pontse Timber</h3>
+              <p class="shopping-cart-card-description">
+                Kitchen Chair Pontse Timber soft comfort Light Brown
+              </p>
+              <div class="shopping-cart-card-quantity-setter">
+                <button class="quantity-minus-btn">&minus;</button>
+                <input
+                  type="text"
+                  name=""
+                  class="quantity-input"
+                  value="1"
+                  maxlength="2"
+                />
+                <button class="quantity-plus-btn">&plus;</button>
+              </div>
+            </div>
+            <div class="shopping-cart-card-last-block">
+              <div class="shopping-cart-card-delete-btn">&times;</div>
+              <div class="shopping-cart-card-price">103$</div>
+            </div>
+          </div> -->
+          <!-- card -->
+          <!-- <div class="shopping-cart-card">
+            <div class="search-result-card-pic card-pic3">
+              <div class="search-result-card-pic-dots">
+                <div class="card-pic-dot"></div>
+                <div class="card-pic-dot"></div>
+                <div class="card-pic-dot"></div>
+                <div class="card-pic-dot"></div>
+              </div>
+              <div class="card-heart"></div>
+            </div>
+            <div class="shopping-cart-card-middle-block">
+              <h3>Soto de Roma</h3>
+              <p class="shopping-cart-card-description">
+                Wooden Brown Chair Jose Monque hard comfort Eco
+              </p>
+              <div class="shopping-cart-card-quantity-setter">
+                <button class="quantity-minus-btn">&minus;</button>
+                <input
+                  type="text"
+                  name=""
+                  class="quantity-input"
+                  value="1"
+                  maxlength="2"
+                />
+                <button class="quantity-plus-btn">&plus;</button>
+              </div>
+            </div>
+            <div class="shopping-cart-card-last-block">
+              <div class="shopping-cart-card-delete-btn">&times</div>
+              <div class="shopping-cart-card-price">136$</div>
+            </div>
+          </div> -->
+        </div>
+          <!-- card end -->
+          <div class="shopping-cart-total-wrapper">
+            <!-- <div class="shopping-cart-total">
+              <p>Total: <span class="shopping-cart-sum">262,99$</span></p>
+            </div>
+            <button class="shopping-cart-buy-btn">Buy</button> -->
+          </div>
+        
+      </div>
+    </div>
+
+    <!-- Congrats popup window -->
+
+    <div class="congrats-popup-wrapper">
+      <div class="congrats-popup-close">&times;</div>
+      <h3>Congratulations with the purchase!</h3>
+      <p>See you soon :)</p>
+    </div>
+
+    <!-- Favourites popup window -->
+
+    <div class="favourites-popup-wrapper">
+      <div class="favourites-popup-close">&times;</div>
+      <!-- Favourites -->
+
+      <h2 class="shopping-cart-heading">
+        My favourites (<span class="favourites-heading-number">0</span>)
+      </h2>
+      <div class="fav-message"></div>
+      <div class="favourites-wrapper">
+        <div class="favourites-cards-wrapper">
+          <!-- card -->
+          <!-- <div class="search-result-card">
+            <div class="search-result-card-pic card-pic2">
+              <div class="search-result-card-pic-dots">
+                <div class="card-pic-dot"></div>
+                <div class="card-pic-dot"></div>
+                <div class="card-pic-dot"></div>
+                <div class="card-pic-dot"></div>
+              </div>
+              <div class="card-heart"></div>
+            </div>
+            <div class="search-result-card-price-wrapper">
+              <div class="card-price">103$</div>
+              <div class="card-discount-sum">112$</div>
+              <div class="card-discount-percent">-8%</div>
+            </div>
+            <p class="search-result-card-description">
+              Kitchen Chair Pontse Timber soft comfort Light Brown
+            </p>
+            <button class="search-result-card-btn">Add to cart</button>
+          </div> -->
+          <!-- card -->
+          <!-- <div class="search-result-card">
+            <div class="search-result-card-pic card-pic4">
+              <div class="search-result-card-pic-dots">
+                <div class="card-pic-dot"></div>
+                <div class="card-pic-dot"></div>
+                <div class="card-pic-dot"></div>
+                <div class="card-pic-dot"></div>
+              </div>
+              <div class="card-heart"></div>
+            </div>
+            <div class="search-result-card-price-wrapper">
+              <div class="card-price">159,99$</div>
+              <div class="card-discount-sum"></div>
+              <div class="card-discount-percent"></div>
+            </div>
+            <p class="search-result-card-description">
+              Country Armchair Soto de Roma Oak soft seat
+            </p>
+            <button class="search-result-card-btn">Add to cart</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION -->
+
+    <section>
+      <div class="section-parent-one"></div>
+      <div class="section-parent-two"></div>
+      <div class="section-parent-three"></div>
+      <!-- Banner slider -->
+
+      <!-- <div class="banner-slider slider">
+        <div class="slide1 slide"></div>
+        <div class="slide2 slide"></div>
+        <div class="slide3 slide"></div>
+
+        <div class="dot"></div>
+          <div class="dot dot-active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+      </div> -->
+
+      <!-- Categories cards -->
+
+      <!-- <div class="categories-cards-wrapper">
+        <div class="categories-card">
+          <h3>Chairs</h3>
+          <div class="categories-card-image-block card-image1"></div>
+        </div>
+        <div class="categories-card">
+          <h3>Tables</h3>
+          <div class="categories-card-image-block card-image2"></div>
+        </div>
+        <div class="categories-card">
+          <h3>Bookcases</h3>
+          <div class="categories-card-image-block card-image3"></div>
+        </div>
+        <div class="categories-card">
+          <h3>Beds</h3>
+          <div class="categories-card-image-block card-image4"></div>
+        </div>
+        <div class="categories-card">
+          <h3>Sofas</h3>
+          <div class="categories-card-image-block card-image5"></div>
+        </div>
+        <div class="categories-card">
+          <h3>Light</h3>
+          <div class="categories-card-image-block card-image6"></div>
+        </div>
+      </div> -->
+     
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="main-footer">
+      <h2 class="logo">Interio</h2>
+      <div class="footer-link-block-wrapper">
+        <div class="footer-link-block-row">
+          <div class="footer-link-block">
+            <ul>
+              <li><h3>Company</h3></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Delivery</a></li>
+            </ul>
+          </div>
+          <div class="footer-link-block">
+            <ul>
+              <li><h3>Contact us</h3></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-link-block-row">
+          <div class="footer-link-block">
+            <ul>
+              <li><h3>Cooperation</h3></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Sell on Interio</a></li>
+            </ul>
+          </div>
+          <div class="footer-link-block">
+            <ul>
+              <li><h3>Legal</h3></li>
+              <li><a href="#">Terms & conditions</a></li>
+              <li><a href="#">Price policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p><small>&copy 2022 Interio. All rights reserved.</small></p>
+    </footer>
+  </body>
+</html>
