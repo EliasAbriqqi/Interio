@@ -6,6 +6,8 @@ import instantResultsView from "./views/instantResultsView";
 import * as model from "./model";
 import favouritesView from "./views/favouritesView";
 import cartView from "./views/cartView";
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 
 const controlInstantResults = function (q) {
   model.clearFoundProducts();
