@@ -2,7 +2,7 @@
   "name": "interio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "./src/js/controller.js",
   "engines": {
     "node": "18.x"
   },
