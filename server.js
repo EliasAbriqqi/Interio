@@ -1,8 +1,8 @@
-const jsonServer = require("json-server");
-const server = jsonServer.create();
-const router = jsonServer.router("./database/products.json");
+import { create, router as _router, defaults } from "json-server";
+const server = create();
+const router = _router("./database/products.json");
 
-const middlewares = jsonServer.defaults();
+const middlewares = defaults();
 
 server.use(middlewares);
 server.use(router);
