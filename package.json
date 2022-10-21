@@ -2,7 +2,7 @@
   "name": "interio",
   "version": "1.0.0",
   "description": "",
-  "default": "index.html",
+  "default": "./src/js/controller.js",
   "engines": {
     "node": "18.x"
   },
@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "json-server --watch database/products.json",
     "build": "parcel build index.html --dist-dir ./dist",
-    "dev": "parcel index.html"
+    "dev": "parcel index.html",
+    "server": "node server.js"
   },
   "keywords": [],
   "author": "",
