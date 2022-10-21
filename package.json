@@ -1,8 +1,8 @@
 {
   "name": "interio",
   "version": "1.0.0",
-  "description": "",
-  "default": "./src/js/controller.js",
+  "description": "Pet-project e-commerce app",
+  "default": "index.html",
   "engines": {
     "node": "18.x"
   },
