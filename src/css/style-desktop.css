@@ -443,6 +443,7 @@
   }
 
   .product-card-description {
+    width: auto;
     font-size: 1.6rem;
     line-height: 2;
   }
@@ -520,7 +521,7 @@
   }
 
   .shopping-cart-heading {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
     margin-left: 0;
   }
 
@@ -609,7 +610,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70vw;
-    height: 80vh;
+    height: 85vh;
     padding: 4rem 4rem 0;
     border-radius: 0.5rem;
     overflow-y: hidden;
@@ -627,7 +628,7 @@
   }
 
   .favourites-cards-wrapper .search-result-card {
-    margin: 2rem 4rem;
+    margin: 0 4rem 2rem;
   }
 
   .favourites-popup-wrapper .shopping-cart-heading {
