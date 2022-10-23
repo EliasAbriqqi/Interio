@@ -42,7 +42,8 @@ class instantResultsView extends View {
         mobileSearchPopup.value = "";
       };
 
-      inputBar.addEventListener("click", function () {
+      inputBar.addEventListener("click", function (e) {
+        e.preventDefault();
         searchPopupWindow.classList.add("search-popup-show");
         document.documentElement.style.overflowY = "hidden";
         veil.style.display = "block";
