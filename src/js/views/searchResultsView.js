@@ -48,8 +48,16 @@ class searchResultsView extends View {
 
   activateSearchBtn(handler) {
     const searchBtn = document.querySelector(".search-input-btn");
+    const searchPopupBtn = document.querySelector(".search-popup-btn");
     const searchInput = document.querySelector(".search-input");
+    const searchPopupInput = document.querySelector(".search-popup-input");
     const searchPopupWrapper = document.querySelector(".search-popup-wrapper");
+
+    const hideMobilePopup = function () {
+      searchPopupWrapper.classList.remove("search-popup-show");
+      document.documentElement.style.overflowY = "unset";
+      veil.style.display = "none";
+    };
 
     searchBtn.addEventListener("click", function (e) {
       e.preventDefault();
@@ -57,6 +65,15 @@ class searchResultsView extends View {
       handler();
       searchInput.blur();
       searchInput.value = "";
+    });
+
+    searchPopupBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (searchPopupInput.value.trim().length === 0) return;
+      hideMobilePopup();
+      handler();
+      searchPopupInput.blur();
+      searchPopupInput.value = "";
     });
 
     document.addEventListener("keyup", function (e) {
