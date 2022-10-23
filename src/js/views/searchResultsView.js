@@ -52,6 +52,7 @@ class searchResultsView extends View {
     const searchInput = document.querySelector(".search-input");
     const searchPopupInput = document.querySelector(".search-popup-input");
     const searchPopupWrapper = document.querySelector(".search-popup-wrapper");
+    const veil = document.querySelector(".veil");
 
     const hideMobilePopup = function () {
       searchPopupWrapper.classList.remove("search-popup-show");
@@ -74,6 +75,7 @@ class searchResultsView extends View {
       handler();
       searchPopupInput.blur();
       searchPopupInput.value = "";
+      veil.style.display = "none";
     });
 
     document.addEventListener("keyup", function (e) {
