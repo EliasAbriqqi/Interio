@@ -389,7 +389,7 @@
   }
 
   .product-card-dots-wrapper .dot-active {
-    outline: 1px solid #c1c1c1;
+    border: 1px solid #c1c1c1;
     border-radius: 0.5rem;
   }
 
@@ -716,7 +716,7 @@
   }
 
   .dot-active {
-    outline: 0.3rem solid var(--orange);
+    border: 0.3rem solid var(--orange);
   }
 
   /* Categories cards */
