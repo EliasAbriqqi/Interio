@@ -1078,6 +1078,7 @@ section {
   border: 1px solid var(--text-color-secondary);
   border-left: none;
   border-right: none;
+  border-radius: unset;
   font-size: 1.4rem;
   text-align: center;
 }
