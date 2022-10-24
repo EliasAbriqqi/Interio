@@ -74,6 +74,41 @@ a {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
+/* Preloader */
+
+.preloader-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.preloader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  border: 1.2rem solid var(--slider-dots-color);
+  border-radius: 50%;
+  border-top: 1.2rem solid var(--orange);
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
 /* HEADER */
 
 header.main-header {

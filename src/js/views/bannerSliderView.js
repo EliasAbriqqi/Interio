@@ -5,6 +5,7 @@ class bannerSliderView extends View {
   _slide = ".banner-slider .slide";
   _dotContainer = ".banner-slider-dots-wrapper";
   _dot = ".banner-slider-dots-wrapper .dot";
+  _preloaderWrapper = ".preloader-background";
 
   _defineSlides() {
     return document.querySelectorAll(this._slide);
@@ -26,6 +27,16 @@ class bannerSliderView extends View {
     <div class="banner-slider-dots-wrapper">
     </div>
   </div>`;
+  }
+
+  activatePreloader() {
+    const preloaderWrapper = document.querySelector(this._preloaderWrapper);
+    preloaderWrapper.style.display = "block";
+  }
+
+  deactivatePreloader() {
+    const preloaderWrapper = document.querySelector(this._preloaderWrapper);
+    preloaderWrapper.style.display = "none";
   }
 }
 

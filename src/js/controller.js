@@ -183,7 +183,9 @@ const refreshCartNumber = function () {
 
 const init = async function () {
   try {
+    bannerSliderView.activatePreloader();
     await model.loadAllProducts();
+    bannerSliderView.deactivatePreloader();
     bannerSliderView.render();
     bannerSliderView.activateSlider();
     categoriesView.render();
