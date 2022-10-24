@@ -562,7 +562,13 @@
   }
 
   .shopping-cart-card-quantity-setter input {
+    width: 5rem;
     font-size: 1.6rem;
+  }
+
+  .shopping-cart-card-price {
+    position: static;
+    font-size: 1.8rem;
   }
 
   .shopping-cart-total {
@@ -831,7 +837,7 @@
 
   .search-result-card-btn {
     width: 12rem;
-    height: 4.2rem;
+    min-height: 4.2rem;
   }
 
   /* Product */
