@@ -95,8 +95,8 @@ a {
   border: 1.2rem solid var(--slider-dots-color);
   border-radius: 50%;
   border-top: 1.2rem solid var(--orange);
-  width: 12rem;
-  height: 12rem;
+  width: 6rem;
+  height: 6rem;
   animation: spin 2s linear infinite;
 }
 
