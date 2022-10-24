@@ -63,6 +63,19 @@ class cartView extends View {
     this._parentTotalElement.innerHTML = "";
     this._parentTotalElement.insertAdjacentHTML("beforeend", markup);
     this._activateTotalSum();
+
+    const buyBtn = document.querySelector(".shopping-cart-buy-btn");
+    const congratsPopup = document.querySelector(".congrats-popup-wrapper");
+    const cartWrapper = document.querySelector(".shopping-cart-popup-wrapper");
+    const cartVeil = document.querySelector(".gray-veil-cart");
+
+    buyBtn.addEventListener("click", function () {
+      congratsPopup.style.display = "block";
+    });
+
+    congratsPopup.addEventListener("click", function () {
+      congratsPopup.style.display = "none";
+    });
   }
 
   clearTotalSum() {

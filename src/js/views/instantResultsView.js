@@ -109,6 +109,28 @@ class instantResultsView extends View {
       window.addEventListener("resize", hidePopup);
     }
   }
+
+  activateCatalogueBtn() {
+    const catalogueBtn = document.querySelector(".catalog-hamburger");
+    const catalogueBtnDesktop = document.querySelector(
+      ".catalog-hamburger-desktop"
+    );
+    const introMessageWrapper = document.querySelector(
+      ".intro-message-wrapper"
+    );
+
+    const catalogueBtns = [catalogueBtn, catalogueBtnDesktop];
+
+    catalogueBtns.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        introMessageWrapper.style.display = "block";
+      });
+    });
+
+    introMessageWrapper.addEventListener("click", function () {
+      introMessageWrapper.style.display = "none";
+    });
+  }
 }
 
 export default new instantResultsView();

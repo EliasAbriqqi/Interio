@@ -369,6 +369,31 @@ nav.main-nav {
 
 /* Catalogue popup */
 
+.intro-message-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #c1c1c1;
+  z-index: 9;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.95;
+}
+
+.intro-message {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  background-color: #fff;
+  padding: 4rem;
+  font-size: 1.6rem;
+  box-shadow: 0.3rem 0.3rem 0.9rem #606060;
+  border-radius: 0.5rem;
+}
+
 .catalogue-popup-wrapper {
   display: none;
   flex-direction: column;
@@ -1224,11 +1249,23 @@ section {
 
 .congrats-popup-wrapper {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #c1c1c1;
+  z-index: 19;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.95;
+}
+
+.congrats-popup {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: fixed;
-  z-index: 5;
+  z-index: 20;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1238,28 +1275,15 @@ section {
   padding: 2rem;
   border-radius: 0.5rem;
   text-align: center;
+  box-shadow: 0.3rem 0.3rem 0.9rem #606060;
 }
 
-.congrats-popup-close {
-  position: absolute;
-  top: 0.3rem;
-  right: 1.4rem;
-  font-weight: 300;
-  font-size: 3rem;
-  color: var(--slider-dots-color);
-}
-
-.congrats-popup-close:hover {
-  color: var(--text-color-secondary);
-  cursor: pointer;
-}
-
-.congrats-popup-wrapper h3 {
+.congrats-popup h3 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 
-.congrats-popup-wrapper p {
+.congrats-popup p {
   font-size: 1.4rem;
 }
 

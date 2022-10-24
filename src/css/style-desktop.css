@@ -153,6 +153,12 @@
     background-color: rgba(0, 0, 0, 0.25);
   }
 
+  .intro-message {
+    width: 60vw;
+    padding: 4rem;
+    font-size: 1.6rem;
+  }
+
   .catalogue-popup-wrapper {
     flex-direction: row;
     justify-content: center;
@@ -605,7 +611,7 @@
 
   /* Congrats popup window */
 
-  .congrats-popup-wrapper {
+  .congrats-popup {
     width: 40vw;
   }
 
@@ -687,6 +693,10 @@
 
   .catalog-hamburger-desktop {
     margin-right: 2rem;
+  }
+
+  .intro-message {
+    width: 40vw;
   }
 
   .search-input {

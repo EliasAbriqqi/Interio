@@ -190,6 +190,7 @@ const init = async function () {
     bannerSliderView.activateSlider();
     categoriesView.render();
     categoriesView.activateCategoryBtn(showProductsByCategory);
+    instantResultsView.activateCatalogueBtn();
     instantResultsView.activateInstantPopup(controlInstantResults);
     instantResultsView.addEventToCard(showProductPage);
     favouritesView.activateFavPopup(
