@@ -328,7 +328,7 @@ class cartView extends View {
     const activateTotalSum = this._activateTotalSum;
 
     quantInput.value = quant;
-    cardPrice.innerHTML = (productPrice * quant).toFixed(2);
+    cardPrice.innerHTML = (productPrice * quant).toFixed(2) + "$";
 
     if (parseFloat(quantInput.value) <= 1) {
       quantMinus.classList.remove("active");
